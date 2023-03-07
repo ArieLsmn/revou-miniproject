@@ -1,6 +1,7 @@
-header {
+header, footer {
     text-align: center;
 }
+
 li a {
     color: black;
     text-decoration: none;   
@@ -9,23 +10,26 @@ nav ul {
     text-align: center;
     float: right;
     margin: 0;
-    border: 1px solid;
+
 }
 nav li {
     display: inline-flex;
     border: 1px solid;
     font-weight: bold;
+    margin: 0;
 }
-
+.separator {
+    justify-content: space-between;
+}
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
-img {
-	display: flex;
+nav img {
+	display: inline-flex;
 	justify-content: flex-start;
 	text-align: left;
-    border: 1px solid;
 }
 .container {
     display: flex;
@@ -104,6 +108,35 @@ form input {
     display: grid;
     grid-template-rows: 80px 200px;
 }
+.feature-box {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.feature-list>ol {
+    display: flex;
+    flex-direction: column;
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal;
+    padding: 0;
+    margin-bottom: 4em;
+}
+.feature-list li {
+    counter-increment: li;
+    margin-bottom: 5px;
+}
+.feature-list li::before {
+    margin-right: 10px;
+    content: counter(li);
+    background: #edf0f4;
+    border-radius: 100%;
+    color: black;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+}
 .circle {
     border-radius: 50%;
     width: 34px;
@@ -112,17 +145,12 @@ form input {
     background: #edf0f4;
     color: #000;
     text-align: center;
-        font: 32px Arial, sans-serif;
-      }
-.feature-box {
-    display: flex;
-    margin-right: 10px;
-    margin-left: 10px;
-    flex-direction: column;
-}
-.feature-list {
-    display: flex;
-    flex-direction: row;
+    font: 32px Arial, sans-serif;
+    }
+
+.package-title {
+    background: #edf0f4;
+    text-align: center;
 }
 .package-list {
     display: flex;
