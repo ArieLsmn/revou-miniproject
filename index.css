@@ -1,0 +1,136 @@
+header {
+    text-align: center;
+}
+li a {
+    color: black;
+    text-decoration: none;   
+}
+nav ul {
+    text-align: center;
+    float: right;
+    margin: 0;
+    border: 1px solid;
+}
+nav li {
+    display: inline-flex;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+img {
+	display: flex;
+	justify-content: flex-start;
+	text-align: left;
+    border: 1px solid;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+    text-align: right;
+}
+.container>div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: black;
+    border: 2px solid;
+    background-color: white;
+
+}
+
+main {
+    flex-direction: row; 
+    display: flex;
+}
+main div {
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex; 
+    flex: 1; 
+    flex-direction: column; 
+    align-content: center; 
+    justify-content: center;
+    background-color: #edf0f4;
+}
+nav div {
+    border: 5px solid;
+    display: flex; 
+    flex: 1; 
+    align-content: center; 
+    justify-content: center;
+}
+form {
+    margin: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+}
+input {
+    width:  70%;
+    padding: 20px 10px; 
+    line-height: 20px;
+    border-radius: 10px;
+}
+.send-button a {
+    color: white;
+    text-decoration: none;   
+}
+.send-button {
+    text-align: center;
+    display: flex;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-right: 100px;  
+}
+label {
+    font-weight: bold;
+}
+form input {    
+    display: grid;
+    grid-template-rows: 80px 200px;
+}
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    background: #edf0f4;
+    color: #000;
+    text-align: center;
+        font: 32px Arial, sans-serif;
+      }
+.feature-box {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.feature-list {
+    display: flex;
+    flex-direction: row;
+}
+.package-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.package {
+    display: flex;
+    flex-direction: row;
+}
