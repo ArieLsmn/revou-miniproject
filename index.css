@@ -1,83 +1,89 @@
+html, body {
+    font-family: Arial;
+    margin: 0;
+    padding:0;
+}
 header, footer {
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-li a {
-    color: black;
-    text-decoration: none;   
+.nav-bar {
+    position: fixed;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #edf0f4;
+    width: 100%;
+    height: 80px;
+
 }
-nav ul {
+.logo {
+    display: flex;
     text-align: center;
-    float: right;
-    margin: 0;
+    justify-content: flex-start;
+    font-size:24px;
+    margin-left: 15px;
+    font: 40px Tahoma;
 
 }
-nav li {
+.nav-link {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+nav a {
     display: inline-flex;
     border: 1px solid;
     font-weight: bold;
-    margin: 0;
+    
+    border-radius: 7px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
 }
-.separator {
-    justify-content: space-between;
+
+.header-section {
+    align-items: center; 
+    padding-top: 70px;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+
+.main-section {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
 }
-.image-column {
+.left-column{
+    align-items: center; 
     display: flex;
     flex-direction: column;
-    padding-left: 50px; 
-}
-nav img {
-	display: inline-flex;
-	justify-content: flex-start;
-	text-align: center;
-}
-.container {
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 5px;
-    text-align: right;
-}
-.container>div {
-    padding: 10px;
-    text-align: center;
-    font-size: 14sp;
-    color: black;
-    border: 2px solid;
-    background-color: white;
-
+    width: 70%;
 }
 
-main {
-    flex-direction: row; 
-    display: flex;
-}
-main div {
-    padding: 10px;
+.image-column,.form-column {
+    padding: 0px;
     border-radius: 20px;
-    margin: 20px;
-    display: flex; 
-    flex: 1; 
-    flex-direction: column; 
+    margin: 10px;
     align-content: center; 
     justify-content: center;
+    justify-items: center;
+    align-items: center;
     background-color: #edf0f4;
+    align-self: self-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
-nav div {
-    border: 5px solid;
-    display: flex; 
-    flex: 1; 
-    align-content: center; 
-    justify-content: center;
-}
+
+
 form {
     margin: 0;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
     justify-content: center;
@@ -87,22 +93,26 @@ form {
 }
 input {
     width:  70%;
-    padding: 20px 10px; 
+    padding: 20px 30px; 
     line-height: 20px;
     border-radius: 10px;
+
 }
 .send-button a {
     color: white;
     text-decoration: none;
+    padding: 10px; 
        
 }
 .send-button {
     text-align: center;
+    align-content: center; 
+    justify-content: center;
     display: flex;
     background-color: black;
     border-radius: 5px;
     color: white;
-    margin-top: 0;
+    margin-top: 20px;
     margin-left: 100px;
     margin-bottom: 50px;
     margin-right: 100px;  
@@ -112,12 +122,22 @@ label {
 }
 form input {    
     display: grid;
-    grid-template-rows: 80px 200px;
+    grid-template-rows: 100px 200px;
+    font-size:24px;
 }
+form select {
+    border-radius: 10px;
+    font-size:24px;
+}
+.form-header {
+    padding:20px;
+}
+
 .feature-box {
     display: flex;
     margin-right: 10px;
     margin-left: 10px;
+    margin-top: 20px;
     flex-direction: column;
 }
 .feature-list>ol {
@@ -142,6 +162,8 @@ form input {
     width: 1.2em;
     text-align: center;
     display: inline-block;
+    padding: 10px;
+    font-weight: bold;
 }
 .circle {
     border-radius: 50%;
@@ -152,39 +174,106 @@ form input {
     color: #000;
     text-align: center;
     font: 32px Arial, sans-serif;
+    width: 15%;
     }
+.bottom-section{
 
+    align-content: center; 
+    justify-content: center;
+}
 .package-title {
     background: #edf0f4;
     text-align: center;
+    padding: 20px;
+    align-content: center; 
 }
-.package-list {
-    display: flex;
-    flex-direction: row;
-    margin-right: 10px;
-    margin-left: 10px;
+.package-wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:1000px;
+    margin-top:10px;
+    margin-right:0;
+    margin-left:20px;
+    padding: 10px;
+    grid-column-gap: 100px;
+    align-content: center; 
+    justify-content: space-between;
+
 }
 .package {
+    display: inline-flex;
+    
+    width:500px;
+}
+
+.caption {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    font: 24px Arial;
+}
+.call-section {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 30px;
+    text-align: center;
+    align-content: center; 
+    justify-content: center;
+    align-items: center;
 }
 .call-button {
     text-align: center;
     align-content: center; 
     justify-content: center;
-    display: flex;
+    display: inline-flex;
     background-color: black;
     border-radius: 5px;
     color: white;
     margin-top: 0;
-    margin-left: 200px;
-    margin-bottom: 50px;
-    margin-right: 200px;  
-    
+
+    width: 20%; 
 }
 .call-button a {
     color: white;
     text-decoration: none;
-    text-align: center;
-    padding: 20px;  
+    padding: 20px;
+
 }
+
+.footer-bottom .logo {
+    align-content: center; 
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.terms>span{
+    padding : 10px;
+    gap: .5rem;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.mySlides {display: none;}

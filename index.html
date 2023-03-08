@@ -2,40 +2,78 @@
 <html>
 
 <head>
-    <title>Your Trusted Travel Agent</title>
+    <title>Travel Agent</title>
 
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
         <nav class="container">
-            <div class="separator">
-                <img src=http://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png
-                    class="logo" width="40" height="40" />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Package</a></li>
-                    <li><a href="#">Call Us</a></li>
-                </ul>
+            <div class="nav-bar">
+            <section class="logo">
+                <label><i>TravelKuy</i></label>
+            </section>
+            <section class="nav-button">
+                <div class="nav-link">
+                    <a href="#main">Home</a>
+                    <a href="#package">Our Package</a>
+                    <a href="#call">Call Us</a>
+                </div>
+            </section>
             </div>
         </nav>
-
-
-        <h1><b>Your Trusted Travel Agent's</b></h1>
+    <main class = "header-section">
+    <header>
+        <h1><b>Agen Perjalanan Wisata Terbaik</b></h1>
         <p>Your happiness is our happiness</p>
     </header>
+</main>
+    
+    <main class = "main-section" id="main">
+        <div class="left-column">
+        <section class="image-column">
+            <!--<img src=https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png class="advert"
+                width="600" height="400">-->
+                <div>
+                <div class="mySlides fade">
+                <img src=bali.jpg class="advert" width="600" height="400"></div>
+                <div class="mySlides fade">
+                <img src=bandung.jpg class="advert" width="600" height="400"></div>
+                <div class="mySlides fade">
+                <img src=surabaya.jpg class="advert" width="600" height="400"></div>
+            </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+            <ul>
+                <li><label>Wayan Ruhiyan</label>
+            <br>Atlet Extreme Sport, 30</br>
+            </li>
+        </ul>
+        </section>
+        <section class="feature-box">
+        <b>Travelkuy telah dipercaya melayani kebutuhan pelanggan dalam menyediakan sarana dan transportasi pariwisata domestik dan internasional sejak tahun 2020. Menggunakan layanan kami, anda akan mendapatkan benefit berupa:
+        </b><br></br>
+        <div class="feature-list">
+            <ol>
+                <li>Reservasi penginapan dengan harga hemat
+                </li>
+                <li>Layanan transportasi wisata 7x24 jam
+                </li>
 
-    <!--<main style="flex-direction: column; display: flex;">-->
-    <main>
-        <div class="image-column">
-            <img src=https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png class="advert"
-                width="600" height="400">
-            <br>"Liburan jadi menyenangkan bersama travel agentku"</br>
+                <li>Bila perjalanan terhenti darurat, maka uang kembali
+                </li>
+            </ol>
         </div>
-        <div class="form">
-            <label>Contact Us</label>
+    </section>
+</div>
+        <div class="form-column">
+            <div class="form-header"><label>Contact Us</label>
             <br>Sales akan menghubungi anda 1x24 jam setelah data diterima</br>
+            <p></p>
+            </div>
             <div>
                 <form action="" method="post">
                     <label for="name">Nama: </label>
@@ -45,16 +83,17 @@
                     <br></br>
 
                     <label for="interest">Interest </label>
-                    <select>
+                    <select><option value="" disabled selected>Select option</option>
                         <option>Camping</option>
-                        <option>Traveling</option>
-                        <option>Trekking</option>
+                        <option>Cultural</option>
+                        <option>Offroading</option>
                         <option>Staycation</option>
+                        <option>Honeymoon</option>
                     </select>
-
+                    <br></br>
                     <label for="destination">Destination</label>
 
-                    <select>
+                    <select><option value="" disabled selected>Select option</option>
                         <option>Bali</option>
                         <option>Bandung</option>
                         <option>Yogyakarta</option>
@@ -62,74 +101,108 @@
                         <option>Thailand</option>
                         <option>Japan</option>
                     </select>
+                    <div class="send-button" id="send"><a href="#"><b>SEND</b></a></div>
+                </form>
             </div>
-            <div class="send-button" id="send"><a href="#">Send</a></div>
+            
         </div>
-        </form>
+        
+
 
 
     </main>
-    <div class="feature-box">
-        <b>Use this space to provide users with more information
-            about your offer. Consider it a follow-up to your headline
-            and explain the benefits of your service or product
-        </b><br></br>
-        <div class="feature-list">
-            <ol>
-                <li>First feature
-                </li>
-                <li>Second feature
-                </li>
 
-                <li>Third feature
-                </li>
-            </ol>
-        </div>
-    </div>
+
+
 
     <p></p>
-
-    <div class="package-title">
+    <main class="bottom-section">
+    <div class="package-title" id="package">
         <h1>Our Package</h1>
     </div>
     <p></p>
-    <div class="package-list">
+
+    <section class="package-wrapper">
         <div class="package">
-            <div class="circle">1</div><label>Bali</label>
-            <br>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</br>
+            <span class="circle">1</span><section class="caption"><label>Bali</label>
+            Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</section >
         </div>
         <div class="package">
-            <div class="circle">2</div><label>Bandung</label>
-            <br>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</br>
+            <span class="circle">2</span><section class="caption"><label>Bandung</label>
+            Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</section>
         </div>
         <div class="package">
-            <div class="circle">3</div><label>Surabaya</label>
-            <br>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</br>
+            <span class="circle">3</span> <section class="caption">
+            <label>Surabaya</label>
+            Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</section>
         </div>
-    </div>
-    <br></br>
-    <div class="package-list">
+    </section>
+    <p></p>
+    <section class="package-wrapper">
         <div class="package">
-            <div class="circle">4</div><label>Japan</label>
-            <br>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik</br>
+            <span class="circle">4</span>
+            <section class="caption">
+            <label>Japan</label>
+            Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik</section>
         </div>
         <div class="package">
-            <div class="circle">5</div><label>Singapore</label>
-            <br>Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik</br>
+            <span class="circle">5</span>
+            <section class="caption">
+            <label>Singapore</label>
+            Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik</section>
         </div>
         <div class="package">
-            <div class="circle">6</div><label>Thailand</label>
-            <br>Travel dan wisata di Thailand. Kunjungi cagar budaya dan kuliner yang menarik</br>
+            <span class="circle">6</span>
+            <section class="caption">
+            <label>Thailand</label>
+            Travel dan wisata di Thailand. Kunjungi cagar budaya dan kuliner yang menarik</section>
         </div>
-    </div>
+    </section>
+
+    <p></p>
+</main>
+
     <footer>
-        
-    
-        <h1>Your closing argument headline </h1>
-        <p>Your happiness is our happiness</p>
-        
-        <div class="call-button" id="send"><a href="#">Call Us</a></div>
+        <div class="call-section" id="call">
+        <h1>Got questions?</h1>
+        <br>Jangan ragu untuk mengajukan pertanyaan maupun kritik dan saran</br>
+        <p></p>
+        <div class="call-button" id="send"><a href="#"><b>CALL US</b></a></div>
+    </div>
+    <div class="footer-bottom">
+        <section class="logo">
+            <label>TravelKuy</label>
+        </section>
+            <div class="terms">
+                <span>Terms of Service </span>
+                <span> Privacy Policy</span>
+            </div>
+            <p></p>
+            <span>©2023 Travelkuy</span>
+        </div>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
 </body>
 
 </html>
