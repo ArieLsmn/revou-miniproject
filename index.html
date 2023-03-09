@@ -85,9 +85,9 @@
             <div>
                 <form action="" method="post">
                     <label for="name">Nama: </label>
-                    <input class="name" type="text" placeholder="First and last name"/>
+                    <input class="name" type="text" placeholder="First and last name" />
                     <label for="email">Email: </label>
-                    <input class="email" type="email" placeholder="example@gmail.com"/>
+                    <input class="email" type="email" placeholder="example@gmail.com" />
                     <br></br>
 
                     <label for="interest">Interest </label>
@@ -221,20 +221,20 @@
         }
     </script>
     <script>
-    const name = document.querySelector('.name')
-    const email = document.querySelector('.email')
-    const interest = document.querySelector('.interest')
-    const destination = document.querySelector('.destination')
-    const send = document.querySelector('.sender')
+        const name = document.querySelector('.name')
+        const email = document.querySelector('.email')
+        const interest = document.querySelector('.interest')
+        const destination = document.querySelector('.destination')
+        const send = document.querySelector('.sender')
 
-    send.addEventListener('click', ()=> {
-    if (name.value == '' || email.value == '' || interest.value == ''|| destination.value == '') {
-        alert('ERROR: Please fill out the form')
-    } else {
-        alert('Form submitted')
-    }
-    })
-</script>
+        send.addEventListener('click', () => {
+            if (name.value == '' || email.value == '' || interest.value == '' || destination.value == '') {
+                alert('ERROR: Please fill out the form')
+            } else {
+                alert('Form submitted')
+            }
+        })
+    </script>
 </body>
 
 </html>
