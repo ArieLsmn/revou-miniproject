@@ -51,16 +51,19 @@
                     <span class="dot"></span>
                 </div>
                 <ul>
-                    <li><label>Wayan Ruhiyan</label>
+                    "Dengan liburan bersama TravelKuy, saya mendapatkan pengalaman yang sangat greget"
+                    <p></p>
+                    <li>
+                        <label>Wayan Ruhiyan</label>
                         <br>Atlet Extreme Sport, 30</br>
                     </li>
                 </ul>
             </section>
             <section class="feature-box">
-                <b>Travelkuy telah dipercaya melayani kebutuhan pelanggan dalam menyediakan sarana dan transportasi
+                <b>TravelKuy telah dipercaya melayani kebutuhan pelanggan dalam menyediakan sarana dan transportasi
                     pariwisata domestik dan internasional sejak tahun 2020. Menggunakan layanan kami, anda akan
                     mendapatkan benefit berupa:
-                </b><br></br>
+                </b>
                 <div class="feature-list">
                     <ol>
                         <li>Reservasi penginapan dengan harga hemat
@@ -68,7 +71,7 @@
                         <li>Layanan transportasi wisata 7x24 jam
                         </li>
 
-                        <li>Bila perjalanan terhenti darurat, maka uang kembali
+                        <li>Bila perjalanan terhenti darurat, maka dijamin uang kembali
                         </li>
                     </ol>
                 </div>
@@ -82,13 +85,13 @@
             <div>
                 <form action="" method="post">
                     <label for="name">Nama: </label>
-                    <input id="name" type="text" />
+                    <input class="name" type="text" placeholder="First and last name"/>
                     <label for="email">Email: </label>
-                    <input id="email" type="text" />
+                    <input class="email" type="email" placeholder="example@gmail.com"/>
                     <br></br>
 
                     <label for="interest">Interest </label>
-                    <select>
+                    <select class="interest">
                         <option value="" disabled selected>Select option</option>
                         <option>Camping</option>
                         <option>Cultural</option>
@@ -99,7 +102,7 @@
                     <br></br>
                     <label for="destination">Destination</label>
 
-                    <select>
+                    <select class="destination">
                         <option value="" disabled selected>Select option</option>
                         <option>Bali</option>
                         <option>Bandung</option>
@@ -108,7 +111,7 @@
                         <option>Thailand</option>
                         <option>Japan</option>
                     </select>
-                    <div class="send-button" id="send"><a href="#"><b>SEND</b></a></div>
+                    <div class="send-button" id="send"><a class="sender" href=""><b>SEND</b></a></button></div>
                 </form>
             </div>
 
@@ -217,6 +220,21 @@
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
     </script>
+    <script>
+    const name = document.querySelector('.name')
+    const email = document.querySelector('.email')
+    const interest = document.querySelector('.interest')
+    const destination = document.querySelector('.destination')
+    const send = document.querySelector('.sender')
+
+    send.addEventListener('click', ()=> {
+    if (name.value == '' || email.value == '' || interest.value == ''|| destination.value == '') {
+        alert('ERROR: Please fill out the form')
+    } else {
+        alert('Form submitted')
+    }
+    })
+</script>
 </body>
 
 </html>
